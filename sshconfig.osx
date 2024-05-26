@@ -1,0 +1,18 @@
+Host *bitbucket*
+  ForwardX11 no
+
+Host *github*
+  ForwardX11 no
+
+Host *accre*
+  ForwardX11 no
+
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa
+  ForwardX11 yes
+  XAuthLocation /opt/X11/bin/xauth
+  ServerAliveInterval 60
+  TCPKeepAlive yes
+#  PreferredAuthentications keyboard-interactive,password

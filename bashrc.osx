@@ -1,0 +1,45 @@
+# ${HOME}/bashrc.osx
+
+# Remove zsh line when opening Terminal
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+if [ -f ${HOME}/.bash_aliases ]; then . ${HOME}/.bash_aliases; fi
+
+export VIM_PLUG_DIR=${HOME}/.config/nvim/plugged
+
+export EDITOR=nvim
+
+export PS1='\h:$(echo $(dirname \w)|sed -e "s;\(/.\)[^/]*;\1;g")/$(basename \w) $ '
+
+export GREP_OPTIONS='--color=always'
+
+alias ls='ls -GF'
+
+alias encode='${HOME}/Documents_git/Misc/./encode.py'
+alias decode='${HOME}/Documents_git/Misc/./decode.py'
+
+thornado() {
+
+  export PATH=/usr/local/Cellar/gcc/13.1.0/bin:${PATH}
+
+  alias gcc=gcc-13
+  alias cpp=cpp-13
+
+  export POSEIDON_DIR=${HOME}/Work/Codes/poseidon
+  export THORNADO_DIR=${HOME}/Work/Codes/thornado
+  export WEAKLIB_DIR=${HOME}/Work/Codes/weaklib
+  export AMREX_DIR=${HOME}/Work/Codes/amrex
+  export HDF5_DIR=/usr/local/Cellar/hdf5/1.14.1
+  export LAPACK_DIR=/usr/local/Cellar/lapack/3.11
+
+  . ${THORNADO_DIR}/Workflow/SetEnvironment.sh sjdunham
+
+  alias qv='cd ${HOME}/Work/Analysis'
+  alias ni='cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_NonRelativistic_IDEAL/Executables/'
+  alias nt='cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_NonRelativistic_TABLE/Executables/'
+  alias ri='cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables/'
+  alias rt='cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_Relativistic_TABLE/Executables/'
+  alias wf='cd ${THORNADO_DIR}/Workflow/AMReX'
+  alias amrex='cd ${THORNADO_DIR}/SandBox/AMReX/Euler_Relativistic_IDEAL_MR'
+
+}

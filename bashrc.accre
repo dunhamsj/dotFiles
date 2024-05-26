@@ -1,0 +1,66 @@
+# .bashrc.accre
+
+# User specific aliases and functions
+
+alias nvim='vim'
+
+alias sq='squeue --user=dunhamsj'
+
+export PS1='accre:$(echo $(dirname \w)|sed -e "s;\(/.\)[^/]*;\1;g")/$(basename \w) $ '
+
+thornado() {
+
+  export THORNADO_DIR=${HOME}/Work/thornado
+  export AMREX_DIR=${HOME}/Work/amrex
+
+  alias amrex=''
+  unalias amrex
+
+  alias amrexri='cd ${THORNADO_DIR}/SandBox/AMReX/Euler_Relativistic_IDEAL'
+  alias amrexni='cd ${THORNADO_DIR}/SandBox/AMReX/Euler_NonRelativistic_IDEAL'
+
+  . ${THORNADO_DIR}/Workflow/SetEnvironment.sh accre_gnu
+
+  export LAPACK_DIR=/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/ScaLAPACK/2.1.0
+  export HDF5_DIR=/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/HDF5/1.10.7
+
+}
+
+thornado_GW() {
+
+  export THORNADO_DIR=${HOME}/Work/thornado_GW
+  export AMREX_DIR=${HOME}/Work/amrex_DG
+
+  alias amrex=''
+  unalias amrex
+
+  alias amrexri='cd ${THORNADO_DIR}/SandBox/AMReX/Applications/StandingAccretionShock_Relativistic'
+  alias amrexni='cd ${THORNADO_DIR}/SandBox/AMReX/Applications/StandingAccretionShock_NonRelativistic'
+
+  . ${THORNADO_DIR}/Workflow/SetEnvironment.sh accre_gnu
+
+  export LAPACK_DIR=/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/ScaLAPACK/2.1.0
+  export HDF5_DIR=/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/HDF5/1.10.7
+
+}
+
+thornado_AC() {
+
+  export THORNADO_DIR=${HOME}/Work/thornado_AC
+  export AMREX_DIR=${HOME}/Work/amrex_DG
+  export WEAKLIB_DIR=${HOME}/Work/weaklib
+  export POSEIDON_DIR=${HOME}/Work/poseidon
+
+  alias amrexri=''
+  alias amrexni=''
+  unalias amrexri
+  unalias amrexni
+
+  alias amrex='cd ${THORNADO_DIR}/SandBox/AMReX/Applications/AdiabaticCollapse_XCFC'
+
+  . ${THORNADO_DIR}/Workflow/SetEnvironment.sh accre_gnu
+
+  export LAPACK_DIR=/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/ScaLAPACK/2.1.0
+  export HDF5_DIR=/accre/arch/easybuild/software/MPI/GCC/10.2.0/OpenMPI/4.0.5/HDF5/1.10.7
+
+}

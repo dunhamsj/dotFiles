@@ -1,0 +1,36 @@
+# .bashrc.nics
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then . /etc/bashrc; fi
+
+export PS1='isaac:$(echo $(dirname \w)|sed -e "s;\(/.\)[^/]*;\1;g")/$(basename \w) $ '
+
+# User specific environment and startup programs
+
+alias nvim='vim'
+
+export VIM_PLUG_DIR=${HOME}/.vim/plugged
+
+thornado() {
+
+  module purge
+
+  module load gcc
+  module load openmpi
+  module load hdf5
+  module load netlib-scalapack
+  module load openblas
+
+  . ${HOME}/nics_sep.sh
+
+  export THORNADO_DIR=${HOME}/thornado
+  export AMREX_DIR=${HOME}/amrex
+  export WEAKLIB_DIR=${HOME}/weaklib
+  export POSEIDON_DIR=${HOME}/poseidon
+  export POSEIDON_ACTIVE_DIR=${POSEIDON_DIR}
+
+  alias amrex='cd ${THORNADO_DIR}/SandBox/AMReX/dgExperiments_Euler_Relativistic_IDEAL/'
+  alias lns='ln -sf ${THORNADO_DIR}/SandBox/AMReX/Applications/AdiabaticCollapse_XCFC/main1d.gnu.MPI.ex ${SCRATCHDIR}/Executables/'
+
+  alias scratch='cd ${SCRATCHDIR}/Executables'
+}

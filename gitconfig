@@ -1,0 +1,27 @@
+# This is Git's per-user configuration file: ${HOME}/.gitconfig
+[user]
+  name  = Sam Dunham
+  email = 9784969+dunhamsj@users.noreply.github.com
+[color]
+  ui     = auto
+  status = auto
+[color "diff"]
+  old = "#FF0000"
+  new = "#00FF00"
+[color "status"]
+  added     = "#FFFF00"
+  changed   = "#FF0000"
+  untracked = "#FF00FF"
+[color "branch"]
+  current = "#FFFF00"
+[core]
+  ignorecase = false
+  editor     = nvim
+  filemode   = true
+[filter "lfs"]
+  smudge   = git-lfs smudge -- %f
+  process  = git-lfs filter-process
+  required = true
+  clean    = git-lfs clean -- %f
+[init]
+  defaultBranch = main

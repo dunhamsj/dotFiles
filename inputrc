@@ -1,0 +1,14 @@
+# Don't make sound
+set bell-style none
+
+# Use neovim keybindings
+set editing-mode vi
+
+# Use block for normal mode and cursor for insert mode
+set show-mode-in-prompt on
+set vi-ins-mode-string \1\e[6 q\2
+set vi-cmd-mode-string \1\e[2 q\2
+
+"\es": "dunhamsj@login.accre.vanderbilt.edu:"
+"\C-a": beginning-of-line
+"\C-k": "\ecc"

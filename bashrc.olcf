@@ -1,0 +1,33 @@
+# .bashrc.olcf
+
+alias nvim='vim'
+
+alias ls='ls --color=auto'
+
+alias gpfs='cd /gpfs/alpine/ast136/scratch/dunhamsj/Executables'
+
+alias js='jobstat -u dunhamsj'
+
+#alias lnsc='ln -fs ~/thornado/SandBox/dgExperiments_Euler_Relativistic_TABLE/Executables_CPU/ApplicationDriver_ascent_pgi /gpfs/wolf/gen163/scratch/dunhamsj/Executables/ApplicationDriver_ascent_pgiCPU'
+#alias lnsg='ln -fs ~/thornado/SandBox/dgExperiments_Euler_Relativistic_TABLE/Executables_GPU/ApplicationDriver_ascent_pgi /gpfs/wolf/gen163/scratch/dunhamsj/Executables/ApplicationDriver_ascent_pgiGPU'
+alias lnsg='ln -fs ~/thornado/SandBox/TwoMoment_OrderV/Executables/ApplicationDriver_summit_nvhpc /gpfs/alpine/ast136/scratch/dunhamsj/Executables/ApplicationDriver_summit_nvhpcGPU'
+
+alias bsubc='bsub run_thornadoCPU.lsf'
+alias bsubg='bsub run_thornadoGPU.lsf'
+
+alias ric='cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables_CPU/'
+alias rig='cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables_GPU/'
+alias rtc='cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_Relativistic_TABLE/Executables_CPU/'
+alias rtg='cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_Relativistic_TABLE/Executables_GPU/'
+alias tm='cd ${THORNADO_DIR}/SandBox/TwoMoment_OrderV/Executables/'
+
+alias rmout='rm -f ../Output_*/*'
+alias thornado='. ${THORNADO_DIR}/Workflow/SetEnvironment.sh summit_nvhpc'
+
+export PS1='summit:$(echo $(dirname \w)|sed -e "s;\(/.\)[^/]*;\1;g")/$(basename \w) $ '
+
+export THORNADO_DIR=${HOME}/thornado
+export WEAKLIB_DIR=${HOME}/weaklib
+export AMREX_DIR=${HOME}/amrex
+
+module load python

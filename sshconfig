@@ -1,0 +1,48 @@
+Host archlinux
+  HostName archlinux
+  User kkadoogan
+  ForwardAgent yes
+  ForwardX11 yes
+  XAuthLocation /opt/X11/bin/xauth # osx
+
+Host accre
+  HostName login.accre.vanderbilt.edu
+  User dunhamsj
+
+Host summit
+  HostName summit.olcf.ornl.gov
+  User dunhamsj
+
+Host frontier
+  HostName frontier.olcf.ornl.gov
+  User dunhamsj
+
+Host andes
+  HostName andes.olcf.ornl.gov
+  User dunhamsj
+
+Host isaac-ng
+  HostName login.isaac.utk.edu
+  User sdunham6
+
+Host isaac-legacy
+  HostName acf-login.acf.utk.edu
+  User sdunham6
+
+Host vpac
+  HostName vpac01.phy.vanderbilt.edu
+  User dunhamsj
+
+Host ascent
+  HostName login1.ascent.olcf.ornl.gov
+  User dunhamsj
+
+Host *
+  IdentityFile ~/.ssh/id_rsa
+  ServerAliveInterval 60
+  TCPKeepAlive yes
+  ForwardX11 no
+#  XAuthLocation /usr/bin/xauth # linux
+#  PreferredAuthentications keyboard-interactive,publickey
+#  UseKeychain yes
+#  AddKeysToAgent yes

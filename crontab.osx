@@ -1,0 +1,12 @@
+MAILTO=""
+59 13 * * * osascript -e 'tell application "Terminal" to do script "crontab -l > ~/Documents/bak.crontab.osx; exit"'
+59 13 * * * osascript -e 'tell application "Terminal" to do script "cp ~/.config/nvim/init.vim ~/Documents/bak.init.vim.osx; exit"'
+59 13 * * * osascript -e 'tell application "Terminal" to do script "cp ~/.bash_aliases ~/Documents/bak.bash_aliases; exit"'
+59 13 * * * osascript -e 'tell application "Terminal" to do script "cp ~/.bash_profile ~/Documents/bak.bash_profile; exit"'
+59 13 * * * osascript -e 'tell application "Terminal" to do script "cp ~/.bashrc ~/Documents/bak.bashrc; exit"'
+59 13 * * * osascript -e 'tell application "Terminal" to do script "cp ~/.bashrc.local ~/Documents/bak.bashrc.osx; exit"'
+59 13 * * * osascript -e 'tell application "Terminal" to do script "cp ~/.gitconfig ~/Documents/bak.gitconfig; exit"'
+59 13 * * * osascript -e 'tell application "Terminal" to do script "cp ~/ssh/.config ~/Documents/bak.sshconfig.osx; exit"'
+59 13 * * * osascript -e 'tell application "Terminal" to do script "cp -rf ~/.config/joplin-desktop/* ~/Work/joplin; exit"'
+59 13 * * * osascript -e 'tell application "Terminal" to do script "cp ~/Documents/CV/CV.pdf ~/Documents/Website/CV_DunhamSamuel.pdf; exit"'
+00 14 * * * osascript -e 'tell application "Terminal" to do script "sh ~/Documents/BashScripts/backup.sh; exit"'
