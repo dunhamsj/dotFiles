@@ -10,7 +10,7 @@ if [ -f ${HOME}/.bash_aliases ]; then . ${HOME}/.bash_aliases; fi
 if [ -f /usr/bin/nvim ]; then export EDITOR=nvim; fi
 
 # If /usr/bin/termite exists, set it to TERMINAL (this defines i3-sensible-terminal)
-if [ -f /usr/bin/termite ]; then export export TERMINAL='/usr/bin/termite'; fi
+if [ -f /usr/bin/termite ]; then export TERMINAL='/usr/bin/termite'; fi
 
 #export DEBUGINFOD_URLS="https://debuginfod.archlinux.org"
 
