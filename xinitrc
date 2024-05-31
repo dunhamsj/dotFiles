@@ -9,13 +9,13 @@ xset r rate 500 40
 xset -r 26 # Stop `e` key from auto-repeating
 
 # Set background to random image in specified directory
-feh --bg-max --randomize /home/kkadoogan/Pictures/wp
+feh --bg-max --randomize /mnt/shared/pictures/wp
 
 # Start picom using custom conf file
-picom --config ~/.config/picom/picom.conf &
+picom --config /mnt/shared/documents/dotFiles/picom.conf &
 
 # Use two monitors, not mirrored
 #xrandr --output HDMI-1 --auto --right-of DP-1 &
 
 # Execute window manager
-exec i3
+exec i3 -c /mnt/shared/documents/dotFiles/i3.conf

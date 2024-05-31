@@ -9,19 +9,24 @@ if [ -f ${HOME}/.bash_aliases ]; then . ${HOME}/.bash_aliases; fi
 # If /usr/bin/nvim exists, set it to EDITOR
 if [ -f /usr/bin/nvim ]; then export EDITOR=nvim; fi
 
-# If /usr/bin/termite exists, set it to TERMINAL (this defines i3-sensible-terminal)
-if [ -f /usr/bin/termite ]; then export TERMINAL='/usr/bin/termite'; fi
+# If /usr/bin/alacritty exists, set it to TERMINAL (this defines i3-sensible-terminal)
+if [ -f /usr/bin/alacritty ]; then export TERMINAL='/usr/bin/alacritty'; fi
+
+export BG=#0d0d1b
+export MPD_PORT=8006
 
 #export DEBUGINFOD_URLS="https://debuginfod.archlinux.org"
+export XDG_CONFIG_HOME=${HOME}/.config
 
 # Change command prompt to [GREEN]<hostname>[DEFAULT]:/c/w/directory
 export PS1='\[\033[0;32m\]\h\[\033[0m\]:$(echo $(dirname \w)|sed -e "s;\(/.\)[^/]*;\1;g")/$(basename \w) $ '
 
 alias ls='ls --color --classify'
-alias volup='amixer -c 3 set PCM 1dB+'
-alias voldn='amixer -c 3 set PCM 1dB-'
-alias volmid='amixer -c 3 set PCM 50%'
-alias startx='startx > /dev/null 2> /dev/null'
+alias  volup='amixer -c 3 set PCM 1dB+'
+alias  voldn='amixer -c 3 set PCM 1dB-'
+alias   mute='amixer -c 3 set PCM mute'
+alias unmute='amixer -c 3 set PCM unmute'
+#alias startx='startx > /dev/null 2> /dev/null'
 
 rename() {
 
@@ -48,11 +53,11 @@ thornado() {
 
   export POSEIDON_MACHINE_NAME=kkadoogan
 
-  export THORNADO_DIR=${HOME}/Work/Codes/thornado
-  export AMREX_DIR=${HOME}/Work/Codes/amrex
-  export AMREX_HOME=${HOME}/Work/Codes/amrex
-  export WEAKLIB_DIR=${HOME}/Work/Codes/weaklib
-  export POSEIDON_DIR=${HOME}/Work/Codes/poseidon
+  export THORNADO_DIR=/mnt/shared/work/codes/thornado
+  export    AMREX_DIR=/mnt/shared/work/codes/amrex
+  export   AMREX_HOME=/mnt/shared/work/codes/amrex
+  export  WEAKLIB_DIR=/mnt/shared/work/codes/weaklib
+  export POSEIDON_DIR=/mnt/shared/work/codes/poseidon
   export POSEIDON_ACTIVE_DIR=${POSEIDON_DIR}
 
   alias ri='cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables'
@@ -61,10 +66,10 @@ thornado() {
   alias amrex='cd ${THORNADO_DIR}/SandBox/AMReX/dgExperiments_Euler_Relativistic_IDEAL'
   alias wf='cd ${THORNADO_DIR}/Workflow/AMReX/'
 
-  module load gcc/gcc.12.2
-  module load openmpi/gnu.4.1.4
-  module load hdf5/gnu.1.12.2
-  module load lapack/gnu.3.10.1
+#  module load gcc/gcc.12.2
+#  module load openmpi/gnu.4.1.4
+#  module load hdf5/gnu.1.12.2
+#  module load lapack/gnu.3.10.1
 
   . ${THORNADO_DIR}/Workflow/SetEnvironment.sh kkadoogan_gnu
 

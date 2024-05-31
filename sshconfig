@@ -38,7 +38,7 @@ Host ascent
   User dunhamsj
 
 Host *
-  IdentityFile ~/.ssh/id_rsa
+  IdentityFile ~/.ssh/id_ed25519
   ServerAliveInterval 60
   TCPKeepAlive yes
   ForwardX11 no

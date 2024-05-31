@@ -1,0 +1,9 @@
+#!/bin/sh
+
+mute=`amixer -c AE5 get PCM | grep dB | cut -d ' ' -f 8`
+if [ "$mute" == "[on]" ]
+then
+  amixer -c AE5 get PCM | grep dB | cut -d ' ' -f 7
+else
+  echo [mute]
+fi

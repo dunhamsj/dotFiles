@@ -1,11 +1,16 @@
 " Turn these on in case you're using vim instead of neovim
-filetype plugin on
+" filetype plugin on
 
 syntax on
 
+colorscheme desert
+
+set termguicolors
 set hlsearch
-hi Search ctermbg=LightYellow ctermfg=Black
-hi Visual ctermbg=LightYellow ctermfg=Black
+
+hi Normal guibg=${BG}
+hi Search ctermbg=Grey ctermfg=Black guibg=Gray guifg=Black
+hi Visual ctermbg=Grey ctermfg=Black guibg=Gray guifg=Black
 
 " Jump to the last cursor position when reopening a file
 " https://stackoverflow.com/questions/774560/in-vim-how-do-i-get-a-file-to-open-at-the-same-line-number-i-closed-it-at-last9
@@ -26,13 +31,14 @@ nnoremap <silent> <F4> :nohlsearch<CR><C-L>
 
 set cc=80
 hi ColorColumn ctermbg=LightYellow ctermfg=Black
+
 set ignorecase " ignore case when searching a file (/HeLLo <==> /hello)
 set mouse=v " allow pasting by clicking middle mouse button
 set mouse=a " allow navigation by clicking left mouse button
 set shiftwidth=4 " width for tabs
 set expandtab " convert tabs to whitespace
 
-set background=light " keep proper syntax coloring in tmux
+set background=dark " keep proper syntax coloring in tmux
 
 " Disable CapsLock. Breaks some git commands so don't use it
 "au VimEnter * silent !setxkbmap -option caps:escape
@@ -48,14 +54,14 @@ set signcolumn=yes
 "highlight SignColumn ctermbg=LightBlue
 highlight SignColumn ctermbg=DarkGrey
 
-call plug#begin($VIM_PLUG_DIR)
-Plug 'lervag/vimtex'
+call plug#begin()
+" Plug 'lervag/vimtex'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 call plug#end()
-"autocmd BufReadPre * AirlineTheme papercolor
-autocmd BufReadPre * AirlineTheme minimalist
+autocmd BufReadPre * AirlineTheme papercolor
+" autocmd BufReadPre * AirlineTheme minimalist
 highlight GitGutterAdd    guifg=#00000 ctermfg=Green
 highlight GitGutterChange guifg=#00000 ctermfg=Yellow
 highlight GitGutterDelete guifg=#00000 ctermfg=Red

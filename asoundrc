@@ -1,3 +1,11 @@
 # Filename: ${HOME}/.asoundrc
-defaults.pcm.!card 3
+#pcm.!default {
+#  type hw
+#  card AE5
+#}
+#ctl.!default {
+#  type hw
+#  card AE5
+#}
+defaults.pcm.!card AE5
 defaults.pcm.!device 0
