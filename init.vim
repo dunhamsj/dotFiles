@@ -1,19 +1,18 @@
 " Turn these on in case you're using vim instead of neovim
-" filetype plugin on
+filetype plugin on
 
-syntax on
+"syntax on
 
-colorscheme desert
-
-set termguicolors
+" set termguicolors
 set hlsearch
 
 hi Normal guibg=${BG}
-hi Search ctermbg=Grey ctermfg=Black guibg=Gray guifg=Black
-hi Visual ctermbg=Grey ctermfg=Black guibg=Gray guifg=Black
+hi Search ctermbg=Gray ctermfg=Black guibg=Gray guifg=Black
+hi Visual ctermbg=Gray ctermfg=Black guibg=Gray guifg=Black
 
 " Jump to the last cursor position when reopening a file
-" https://stackoverflow.com/questions/774560/in-vim-how-do-i-get-a-file-to-open-at-the-same-line-number-i-closed-it-at-last9
+" https://stackoverflow.com/questions/774560/
+" in-vim-how-do-i-get-a-file-to-open-at-the-same-line-number-i-closed-it-at-last9
 if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
     \| exe "normal! g'\"" | endif
@@ -52,17 +51,18 @@ set signcolumn=yes
 "sign define dummy
 "execute 'sign place 9999 line=1 name=dummy buffer=' . bufnr('')
 "highlight SignColumn ctermbg=LightBlue
-highlight SignColumn ctermbg=DarkGrey
+highlight SignColumn guibg=DarkCyan ctermbg=DarkCyan
 
 call plug#begin()
-" Plug 'lervag/vimtex'
+Plug 'lervag/vimtex'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
+Plug 'morhetz/gruvbox'
 call plug#end()
 autocmd BufReadPre * AirlineTheme papercolor
 " autocmd BufReadPre * AirlineTheme minimalist
-highlight GitGutterAdd    guifg=#00000 ctermfg=Green
-highlight GitGutterChange guifg=#00000 ctermfg=Yellow
-highlight GitGutterDelete guifg=#00000 ctermfg=Red
-map :unfold :foldopen
+highlight GitGutterAdd    guifg=Green ctermfg=Green
+highlight GitGutterChange guifg=Yellow ctermfg=Yellow
+highlight GitGutterDelete guifg=Red ctermfg=Red
+colorscheme gruvbox

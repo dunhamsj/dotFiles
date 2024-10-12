@@ -5,6 +5,11 @@ Host archlinux
   ForwardX11 yes
   XAuthLocation /opt/X11/bin/xauth # osx
 
+Host anta
+  HostName anta.caltech.edu
+  user dunhamsj
+  ForwardX11 yes
+
 Host accre
   HostName login.accre.vanderbilt.edu
   User dunhamsj
