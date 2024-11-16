@@ -1,4 +1,5 @@
-# ${HOME}/.bash_aliases
+# Filename: ${HOME}/.bash_aliases
+# Soft-linked from /mnt/shared/documents/dotFiles/bash_aliases
 
 HISTSIZE=100000
 

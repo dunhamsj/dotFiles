@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Filename: ${HOME}/.xinitrc
+# Soft-linked from /mnt/shared/documents/dotFiles/xinitrc
+
 # Disable screensaver
 xset s off
 xset -dpms
@@ -12,7 +15,7 @@ xset -r 26 # Stop `e` key from auto-repeating
 feh --no-fehbg --bg-max --randomize /mnt/shared/pictures/wp
 
 # Start picom using custom conf file
-picom --config /mnt/shared/documents/dotFiles/picom.conf &
+picom --config ${XDG_CONFIG_HOME}/picom/picom.conf &
 
 # Use two monitors, not mirrored
 #xrandr --output HDMI-1 --auto --right-of DP-1 &

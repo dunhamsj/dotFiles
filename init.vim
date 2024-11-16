@@ -1,4 +1,7 @@
-" Turn these on in case you're using vim instead of neovim
+" Filename: ${XDG_CONFIG_HOME}/nvim/init.vim
+" Soft-linked from /mnt/shared/documents/dotFiles/init.vim
+
+"" Turn these on in case you're using vim instead of neovim
 filetype plugin on
 
 "syntax on
@@ -60,6 +63,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 Plug 'morhetz/gruvbox'
 call plug#end()
+filetype indent off " vimplug automatically executes `filetype indent on` after `plut#end()`
+
 autocmd BufReadPre * AirlineTheme papercolor
 " autocmd BufReadPre * AirlineTheme minimalist
 highlight GitGutterAdd    guifg=Green ctermfg=Green

@@ -1,3 +1,6 @@
+# Filename: ${HOME}/.inputrc
+# Soft-linked from /mnt/shared/documents/dotFiles/inputrc
+
 # Don't make sound
 set bell-style none
 

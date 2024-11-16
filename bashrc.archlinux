@@ -1,4 +1,5 @@
-# ${HOME}/.bashrc.archlinux
+# Filename: ${HOME}/.bashrc.archlinux
+# Soft-linked from /mnt/shared/documents/dotFiles/bashrc.archlinux
 
 # If /etc/profile.d/modules.sh exists, run it
 if [ -f /etc/profile.d/modules.sh ]; then . /etc/profile.d/modules.sh; fi
@@ -12,9 +13,10 @@ if [ -f /usr/bin/nvim ]; then export EDITOR=nvim; fi
 # If /usr/bin/alacritty exists, set it to TERMINAL (this defines i3-sensible-terminal)
 if [ -f /usr/bin/alacritty ]; then export TERMINAL='/usr/bin/alacritty'; fi
 
+### Export environment variables
+
 export PTOOLSDIR=/mnt/shared/work/paperTools
 export BG=#0d0d1b
-export MPD_PORT=8006
 
 # hack to get vpn to work
 # https://askubuntu.com/questions/1489326/
@@ -27,14 +29,19 @@ export XDG_CONFIG_HOME=${HOME}/.config
 # Change command prompt to [GREEN]<hostname>[DEFAULT]:/c/w/directory
 export PS1='\[\033[0;32m\]\h\[\033[0m\]:$(echo $(dirname \w)|sed -e "s;\(/.\)[^/]*;\1;g")/$(basename \w) $ '
 
+### Define aliases
+
 alias ls='ls --color --classify'
-alias  volup='amixer -c 3 set PCM 1dB+'
-alias  voldn='amixer -c 3 set PCM 1dB-'
-alias   mute='amixer -c 3 set PCM mute'
-alias unmute='amixer -c 3 set PCM unmute'
+
+alias  volup='pactl set-sink-volume @DEFAULT_SINK@ +1%'
+alias  voldn='pactl set-sink-volume @DEFAULT_SINK@ -1%'
+alias   mute='pactl set-sink-mute   @DEFAULT_SINK@ 1'
+alias unmute='pactl set-sink-mute   @DEFAULT_SINK@ 0'
+
 alias sa='source ${HOME}/myvenv/bin/activate'
 alias sd='source deactivate'
-alias startx='startx > /dev/null 2> /dev/null'
+#alias startx='startx > /dev/null 2> /dev/null'
+alias startx='startx'
 
 rename() {
 
