@@ -1,7 +1,13 @@
 #!/bin/sh
 
-# Filename: ${HOME}/.xinitrc
-# Soft-linked from /mnt/shared/documents/dotFiles/xinitrc
+# Filename: ${HOME}/.vnc/xstartup
+# Soft-linked from /mnt/shared/documents/dotFiles/xstartup
+
+unset SESSION_MANAGER
+
+unset DBUS_SESSION_BUS_ADDRESS
+
+# Filename: ${HOME}/vnc/xstartup
 
 # Disable screensaver
 xset s off
@@ -10,10 +16,6 @@ xset -dpms
 # Set keyboard key repeat rate
 xset r rate 500 40
 xset -r 26 # Stop `e` key from auto-repeating
-
-# Set background to random image in specified directory
-#feh --no-fehbg --bg-max --randomize /mnt/shared/pictures/wp
-#. /home/dunhamsj/.fehbg
 
 # Start picom using custom conf file
 picom --config ${XDG_CONFIG_HOME}/picom/picom.conf &

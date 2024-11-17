@@ -4,9 +4,10 @@
 # Soft-linked from /mnt/shared/documents/dotFiles/i3blocks_volume
 
 mute=`pactl get-sink-mute @DEFAULT_SINK@ | cut -d ' ' -f 2`
-if [ "$mute" == "off" ]
+if [ "$mute" == "no" ]
 then
-  pactl get-sink-volume @DEFAULT_SINK@ | grep dB | cut -d ' ' -f 18-19
+  val=`pactl get-sink-volume @DEFAULT_SINK@ | grep dB | cut -d % -f 3 | cut -d '/' -f 2`
+  echo " "$val
 else
   echo " [mute]"
 fi
