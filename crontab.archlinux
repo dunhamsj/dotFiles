@@ -1,32 +1,5 @@
-59 18 * * * crontab -l > ~/Documents/DotFiles/crontab.archlinux
-59 18 * * * cp ~/.config/i3/config                 ~/Documents/DotFiles/i3.conf
-59 18 * * * cp ~/.config/i3blocks/i3blocks.conf    ~/Documents/DotFiles/i3blocks.conf
-59 18 * * * cp ~/.config/mpv/mpv.conf              ~/Documents/DotFiles/mpv.conf
-59 18 * * * cp ~/.config/mpd/mpd.conf              ~/Documents/DotFiles/mpd.conf
-59 18 * * * cp ~/.config/mpd/getLastPlayed.sh      ~/Documents/DotFiles/mpc.getLastPlayed.sh
-59 18 * * * cp ~/.config/mpd/load.sh               ~/Documents/DotFiles/mpc.load.sh
-59 18 * * * cp ~/.config/mpd/mute.sh               ~/Documents/DotFiles/mpc.mute.sh
-59 18 * * * cp ~/.config/mpd/pause.sh              ~/Documents/DotFiles/mpc.pause.sh
-59 18 * * * cp ~/.config/mpd/play.sh               ~/Documents/DotFiles/mpc.play.sh
-59 18 * * * cp ~/.config/mpd/scripts.sh            ~/Documents/DotFiles/mpc.scripts.sh
-59 18 * * * cp ~/.config/mpd/toggle.sh             ~/Documents/DotFiles/mpc.toggle.sh
-59 18 * * * cp ~/.config/mpd/unmute.sh             ~/Documents/DotFiles/mpc.unmute.sh
-59 18 * * * cp ~/.config/mpd/voldn.sh              ~/Documents/DotFiles/mpc.voldn.sh
-59 18 * * * cp ~/.config/mpd/volup.sh              ~/Documents/DotFiles/mpc.volup.sh
-59 18 * * * cp ~/.config/picom/picom.conf          ~/Documents/DotFiles/picom.conf
-59 18 * * * cp ~/.config/termite/config            ~/Documents/DotFiles/termite.conf
-59 18 * * * cp ~/.config/tmux/tmux.conf            ~/Documents/DotFiles/tmux.conf
-59 18 * * * cp ~/.config/nvim/init.vim             ~/Documents/DotFiles/init.vim
-59 18 * * * cp ~/.config/nvim/ftplugin/fortran.vim ~/Documents/DotFiles/fortran.vim
-59 18 * * * cp ~/.config/nvim/ftplugin/python.vim  ~/Documents/DotFiles/python.vim
-59 18 * * * cp ~/.config/nvim/ftplugin/tex.vim     ~/Documents/DotFiles/tex.vim
-59 18 * * * cp ~/.ssh/config           ~/Documents/DotFiles/sshconfig
-59 18 * * * cp ~/.xinitrc              ~/Documents/DotFiles/xinitrc
-59 18 * * * cp ~/.bashrc               ~/Documents/DotFiles/bashrc
-59 18 * * * cp ~/.inputrc              ~/Documents/DotFiles/inputrc
-59 18 * * * cp ~/.gitconfig            ~/Documents/DotFiles/gitconfig
-59 18 * * * cp ~/.bash_profile         ~/Documents/DotFiles/bash_profile
-59 18 * * * cp ~/.bash_aliases         ~/Documents/DotFiles/bash_aliases
-59 18 * * * cp ~/.bashrc.archlinux     ~/Documents/DotFiles/bashrc.archlinux
-59 18 * * * cp ~/Documents/CV/CV.pdf ~/Documents/Website/CV_DunhamSamuel.pdf
-00 19 * * * sh ~/Documents/BashScripts/backup.sh
+0 0 * * * bash /mnt/shared/documents/appendip.sh
+0 * * * * DISPLAY=`cat /var/tmp/display` && DISPLAY=${DISPLAY} feh --no-fehbg --bg-max --randomize /mnt/shared/pictures/wp
+0 0 * * * contab -l > /mnt/shared/documents/dotFiles/crontab.archlinux
+0 0 * * * bash /mnt/shared/documents/dotFiles/updateDotFiles.sh
+0 0 * * * cp /mnt/shared/documents/cv/cv.pdf /mnt/shared/documents/website/CV_DunhamSamuel.pdf
