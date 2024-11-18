@@ -4,7 +4,7 @@
 general.live_config_reload = true
 
 [font]
-size = 14.0
+size = 12
 
 [font.normal]
 family = "Terminus"

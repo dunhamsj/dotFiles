@@ -26,6 +26,8 @@ export WEBKIT_DISABLE_DMABUF_RENDERER=1
 #export DEBUGINFOD_URLS="https://debuginfod.archlinux.org"
 export XDG_CONFIG_HOME=${HOME}/.config
 
+export INPUTRC=/mnt/shared/documents/dotFiles/inputrc
+
 # Change command prompt to [GREEN]<hostname>[DEFAULT]:/c/w/directory
 # PROMP_COMMAND stuff from
 # https://stackoverflow.com/questions/16715103/bash-prompt-with-the-last-exit-code
@@ -34,7 +36,7 @@ __prompt_command() {
   local EXIT="$?"
   PS1=""
   if [ ${EXIT} -ne 0 ]; then
-    PS1+="\[\033[0;31m\][${EXIT}]\[\033[0m\]"
+    PS1+="\[\033[0;31m\][${EXIT}]\[\033[0m\] "
   fi
   PS1+='\[\033[0;32m\]\h\[\033[0m\]:$(echo $(dirname \w)|sed -e "s;\(/.\)[^/]*;\1;g")/$(basename \w) $ '
 }

@@ -31,9 +31,6 @@ autocmd BufWritePre * %s/\s\+$//e
 " https://www.reddit.com/r/vim/comments/48s8ei/if_i_open_a_file_in_vim_and_press_j_to_move_down/
 nnoremap <silent> <F4> :nohlsearch<CR><C-L>
 
-set cc=80
-hi ColorColumn ctermbg=LightYellow ctermfg=Black
-
 set ignorecase " ignore case when searching a file (/HeLLo <==> /hello)
 set mouse=v " allow pasting by clicking middle mouse button
 set mouse=a " allow navigation by clicking left mouse button
@@ -64,10 +61,12 @@ Plug 'airblade/vim-gitgutter'
 Plug 'morhetz/gruvbox'
 call plug#end()
 filetype indent off " vimplug automatically executes `filetype indent on` after `plut#end()`
-
 autocmd BufReadPre * AirlineTheme papercolor
 " autocmd BufReadPre * AirlineTheme minimalist
 highlight GitGutterAdd    guifg=Green ctermfg=Green
 highlight GitGutterChange guifg=Yellow ctermfg=Yellow
 highlight GitGutterDelete guifg=Red ctermfg=Red
 colorscheme gruvbox
+
+set colorcolumn=80
+hi ColorColumn guibg=Red
