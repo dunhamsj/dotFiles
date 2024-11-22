@@ -56,4 +56,5 @@ dir=${HOME}/.vnc
 mkdir -p ${dir}
 ln -sf ${DOTFILES_DIR}/xstartup ${dir}
 
-sudo cp ${DOTFILES_DIR}/vconsole.conf /etc
+sudo cp -f ${DOTFILES_DIR}/crontab.archlinux /var/spool/cron/dunhamsj
+sudo cp -f ${DOTFILES_DIR}/vconsole.conf /etc
