@@ -52,6 +52,10 @@ dir=${XDG_CONFIG_DIR}/mpv
 mkdir -p ${dir}
 ln -sf ${DOTFILES_DIR}/mpv.conf ${dir}
 
+dir=${XDG_CONFIG_HOME}/tigervnc
+mkdir -p ${dir}
+ln -sf ${DOTFILES_DIR}/tigervnc.config ${dir}/config
+
 dir=${HOME}/.vnc
 mkdir -p ${dir}
 ln -sf ${DOTFILES_DIR}/xstartup ${dir}

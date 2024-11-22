@@ -36,7 +36,7 @@ __prompt_command() {
   local EXIT="$?"
   PS1=""
   if [ ${EXIT} -ne 0 ]; then
-    PS1+="\[\033[0;31m\][${EXIT}]\[\033[0m\] "
+    PS1+="\[\033[0;31m\]${EXIT}\[\033[0m\] "
   fi
   PS1+='\[\033[0;32m\]\h\[\033[0m\]:$(echo $(dirname \w)|sed -e "s;\(/.\)[^/]*;\1;g")/$(basename \w) $ '
 }
