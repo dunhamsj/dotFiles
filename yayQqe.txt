@@ -7,13 +7,17 @@ cronie
 efibootmgr
 feh
 firefox
+gcc-fortran
 gedit
 git
 git-lfs
 grub
+hdf5
 i3-wm
 i3blocks
 inetutils
+lapack
+libreoffice-still
 linux
 linux-firmware
 maim
@@ -26,6 +30,7 @@ mupdf-gl
 neovim
 network-manager-applet
 networkmanager
+openmpi
 picom
 pulseaudio
 pulseaudio-alsa
