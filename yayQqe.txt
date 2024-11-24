@@ -3,6 +3,7 @@ amd-ucode
 base
 base-devel
 bibtool
+bluez-utils
 cronie
 efibootmgr
 feh
@@ -13,6 +14,7 @@ git
 git-lfs
 grub
 hdf5
+htop
 i3-wm
 i3blocks
 inetutils
@@ -27,13 +29,15 @@ mpc
 mpd
 mpv
 mupdf-gl
+neofetch
 neovim
 network-manager-applet
 networkmanager
 openmpi
+pavucontrol
 picom
-pulseaudio
 pulseaudio-alsa
+pulseaudio-bluetooth
 slack-desktop
 sudo
 teams
