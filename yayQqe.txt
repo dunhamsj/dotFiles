@@ -3,6 +3,7 @@ amd-ucode
 base
 base-devel
 bibtool
+blueman
 bluez-utils
 cronie
 efibootmgr
@@ -36,8 +37,8 @@ networkmanager
 openmpi
 pavucontrol
 picom
+pipewire-pulse
 pulseaudio-alsa
-pulseaudio-bluetooth
 slack-desktop
 sudo
 teams
@@ -55,6 +56,7 @@ texlive-mathscience
 texlive-publishers
 tigervnc
 tmux
+virtualbox
 wget
 xorg-server
 xorg-xrandr

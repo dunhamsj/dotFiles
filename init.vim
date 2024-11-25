@@ -23,7 +23,7 @@ endif
 
 " Trim all trailing whitespace
 " https://stackoverflow.com/questions/3474709/delete-all-spaces-and-tabs-at-the-end-of-my-lines
-autocmd BufWritePre * %s/\s\+$//e
+" autocmd BufWritePre * %s/\s\+$//e
 
 " Remove search highlighting with <ESC>
 " https://gist.github.com/subfuzion/7d00a6c919eeffaf6d3dbf9a4eb11d64
