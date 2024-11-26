@@ -3,8 +3,6 @@ amd-ucode
 base
 base-devel
 bibtool
-blueman
-bluez-utils
 cronie
 efibootmgr
 feh
@@ -35,7 +33,6 @@ neovim
 network-manager-applet
 networkmanager
 openmpi
-pavucontrol
 picom
 pipewire-pulse
 pulseaudio-alsa
