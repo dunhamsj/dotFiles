@@ -53,6 +53,7 @@ texlive-mathscience
 texlive-publishers
 tigervnc
 tmux
+unzip
 virtualbox
 wget
 xorg-server
