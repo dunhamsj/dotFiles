@@ -1,5 +1,7 @@
 # Filename: ${HOME}/.bash_aliases
 # Soft-linked from /mnt/shared/documents/dotFiles/bash_aliases
+#
+# Define some system-independent bash aliases
 
 HISTSIZE=100000
 
@@ -13,7 +15,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
-alias ......='cd ../../../../..'
+alias ......='cd ../../../../'
 
 # Typos
 alias tm='rm'
@@ -48,3 +50,5 @@ alias gpush='git push'
 alias gdiff='git diff'
 alias glog='git log --oneline'
 alias gco='git checkout'
+alias grestore='git restore'
+alias gpull='git pull'

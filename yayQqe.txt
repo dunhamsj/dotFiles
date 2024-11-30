@@ -3,6 +3,7 @@ amd-ucode
 base
 base-devel
 bibtool
+cmatrix
 cronie
 efibootmgr
 feh
@@ -56,6 +57,7 @@ tmux
 unzip
 virtualbox
 wget
+wireshark-qt
 xorg-server
 xorg-xrandr
 yay

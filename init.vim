@@ -6,7 +6,7 @@ filetype plugin on
 
 "syntax on
 
-" set termguicolors
+set termguicolors
 set hlsearch
 
 hi Normal guibg=${BG}
