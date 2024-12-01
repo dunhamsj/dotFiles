@@ -27,7 +27,7 @@ if [[ ${#BRANCH} != 0 ]]; then
   MYPS1+="${YELLOW}(${BRANCH})${DEFAULT} "
 fi
 
-MYPS1+="${GREEN}\h${DEFAULT}:$(pwd | sed -e 's;\(/.\)[^/]*;\1;g') $ "
-#MYPS1+="${GREEN}\h${DEFAULT}:$(dirname \w | sed -e 's;\(/.\)[^/]*;\1;g')/$(basename \w) $ "
+basedir=`sed -e "s;\(/.\)[^/]*;\1;g" <<< ${PWD%/*}`
+MYPS1+="${GREEN}\h${DEFAULT}:$basedir/$(basename ${PWD}) $ "
 
 echo "${MYPS1}"

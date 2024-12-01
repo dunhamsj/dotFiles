@@ -4,7 +4,7 @@
 "" Turn these on in case you're using vim instead of neovim
 filetype plugin on
 
-"syntax on
+" syntax on
 
 set termguicolors
 set hlsearch

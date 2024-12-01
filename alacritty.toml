@@ -24,12 +24,6 @@ style = "Italic"
 family = "Terminus"
 style = "Bold Italic"
 
-[[keyboard.bindings]]
-action = "IncreaseFontSize"
-key = "Equals"
-mods = "Control"
-
-[[keyboard.bindings]]
-action = "DecreaseFontSize"
-key = "Minus"
-mods = "Control"
+[keyboard]
+bindings = [ { key = "+", mods = "Control", action = "IncreaseFontSize" },
+             { key = "-", mods = "Control", action = "DecreaseFontSize" } ]
