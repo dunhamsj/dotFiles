@@ -1,24 +1,18 @@
-# ${HOME}/bashrc.osx
-
-# Remove zsh line when opening Terminal
-export BASH_SILENCE_DEPRECATION_WARNING=1
+# Filename: ${HOME}/bashrc.home.osx
+# Soft-linked from ${HOME}/documents_git/dotFiles/bashrc.home.osx
 
 if [ -f ${HOME}/.bash_aliases ]; then . ${HOME}/.bash_aliases; fi
-
-export DISPLAY=:0
-
-export VIM_PLUG_DIR=${HOME}/.config/nvim/plugged
 
 export EDITOR=nvim
 
 export GREP_OPTIONS='--color=always'
 
-export PATH=${PATH}:/usr/local/bin
+export PATH=/usr/local/bin:${PATH}
+
+export PTOOLSDIR=${HOME}/Work/paperTools
 
 alias ls='ls -GF'
 
-alias encode='${HOME}/Documents_git/Misc/./encode.py'
-alias decode='${HOME}/Documents_git/Misc/./decode.py'
 alias sa='source ${HOME}/venv/bin/activate'
 
 # Change command prompt to [GREEN]<hostname>[DEFAULT]:/c/w/directory
@@ -32,7 +26,6 @@ if [ -f ${HOME}/.bash_prompt ]; then
   }
   export PROMPT_COMMAND=prompt_command
 fi
-
 
 thornado() {
 
@@ -62,10 +55,6 @@ thornado() {
   alias yc='cd ${THORNADO_DIR}/SandBox/YahilCollapse_XCFC/Executables/'
   alias wf='cd ${THORNADO_DIR}/Workflow/AMReX'
   alias amrex='cd ${THORNADO_DIR}/SandBox/AMReX/dgExperiments_Euler_Relativistic_IDEAL'
+  alias qv='cd ${HOME}/Work/Analysis'
 
 }
-alias qv='cd ${HOME}/Work/Analysis'
-
-export PTOOLSDIR=${HOME}/Documents_git/paperTools
-export mpdport=6600
-. ${HOME}/.config/mpc/scripts.sh

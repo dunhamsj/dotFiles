@@ -1,12 +1,12 @@
 # Filename: ${XDG_CONFIG_HOME}/alacritty/alacritty.toml
-# Soft-linked from /mnt/shared/documents/dotFiles/alacritty.toml
+# Soft-linked from ${HOME}/documents_git/dotFiles/alacritty.osx.toml
 #
 # Modifies attributes for alacritty terminal
 
 general.live_config_reload = true
 
 [font]
-size = 12
+size = 16
 
 [keyboard]
 bindings = [ { key = "+", mods = "Control", action = "IncreaseFontSize" },
