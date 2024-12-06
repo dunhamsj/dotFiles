@@ -1,0 +1,16 @@
+# Filename: ${XDG_CONFIG_HOME}/alacritty/alacritty.toml
+# Soft-linked from /mnt/shared/documents/dotFiles/alacritty.toml
+#
+# Modifies attributes for alacritty terminal
+
+general.live_config_reload = true
+
+[font]
+size = 12
+
+[keyboard]
+bindings = [ { key = "+", mods = "Control", action = "IncreaseFontSize" },
+             { key = "-", mods = "Control", action = "DecreaseFontSize" } ]
+
+[terminal.shell]
+program = "/usr/local/Cellar/bash/5.2.37/bin/bash"

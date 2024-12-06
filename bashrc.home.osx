@@ -1,0 +1,71 @@
+# ${HOME}/bashrc.osx
+
+# Remove zsh line when opening Terminal
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+if [ -f ${HOME}/.bash_aliases ]; then . ${HOME}/.bash_aliases; fi
+
+export DISPLAY=:0
+
+export VIM_PLUG_DIR=${HOME}/.config/nvim/plugged
+
+export EDITOR=nvim
+
+export GREP_OPTIONS='--color=always'
+
+export PATH=${PATH}:/usr/local/bin
+
+alias ls='ls -GF'
+
+alias encode='${HOME}/Documents_git/Misc/./encode.py'
+alias decode='${HOME}/Documents_git/Misc/./decode.py'
+alias sa='source ${HOME}/venv/bin/activate'
+
+# Change command prompt to [GREEN]<hostname>[DEFAULT]:/c/w/directory
+# Adapted from https://github.com/jaharris87/dotfiles/bash_profile/bashrc
+# PROMP_COMMAND stuff from
+# https://stackoverflow.com/questions/16715103/bash-prompt-with-the-last-exit-code
+if [ -f ${HOME}/.bash_prompt ]; then
+  prompt_command() {
+    ERRMSG=$?
+    export PS1=$(${HOME}/.bash_prompt ${ERRMSG})
+  }
+  export PROMPT_COMMAND=prompt_command
+fi
+
+
+thornado() {
+
+  export PATH=/usr/local/Cellar/gcc/14.2.0/bin:${PATH}
+
+  alias gcc=gcc-14
+  alias cpp=cpp-14
+
+  export GCC_MAJOR=14
+
+  export POSEIDON_DIR=${HOME}/Work/Codes/poseidon
+  export POSEIDON_ACTIVE_DIR=${POSEIDON_DIR}
+  export THORNADO_DIR=${HOME}/Work/Codes/thornado
+  export WEAKLIB_DIR=${HOME}/Work/Codes/weaklib
+  export AMREX_DIR=${HOME}/Work/Codes/amrex_sjd
+  export HDF5_DIR=/usr/local/Cellar/hdf5/1.14.4.3
+  export LAPACK_DIR=/usr/local/Cellar/lapack/3.12.0
+
+#  make FORT_CPP="cpp-${GCC_MAJOR} -E -traditional-cpp -P"
+
+  . ${THORNADO_DIR}/Workflow/SetEnvironment.sh sjdunham
+
+  alias ni='cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_NonRelativistic_IDEAL/Executables/'
+  alias nt='cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_NonRelativistic_TABLE/Executables/'
+  alias ri='cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables/'
+  alias rt='cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_Relativistic_TABLE/Executables/'
+  alias yc='cd ${THORNADO_DIR}/SandBox/YahilCollapse_XCFC/Executables/'
+  alias wf='cd ${THORNADO_DIR}/Workflow/AMReX'
+  alias amrex='cd ${THORNADO_DIR}/SandBox/AMReX/dgExperiments_Euler_Relativistic_IDEAL'
+
+}
+alias qv='cd ${HOME}/Work/Analysis'
+
+export PTOOLSDIR=${HOME}/Documents_git/paperTools
+export mpdport=6600
+. ${HOME}/.config/mpc/scripts.sh
