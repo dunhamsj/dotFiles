@@ -1,17 +1,19 @@
 " Filename: ${XDG_CONFIG_HOME}/nvim/init.vim
 " Soft-linked from /mnt/shared/documents/dotFiles/init.vim
 
-"" Turn these on in case you're using vim instead of neovim
+" Both `set noautoindent` and `filetype indent off` are required.
+" Also, ordering is important: `filetype indent off` must be before `syntax on`
+set noautoindent
+filetype indent off
+
+syntax on
 filetype plugin on
 
-" syntax on
+"set termguicolors " turn off if using mac terminal emulator
 
-set termguicolors
-set hlsearch
-
-hi Normal guibg=${BG}
-hi Search ctermbg=Gray ctermfg=Black guibg=Gray guifg=Black
-hi Visual ctermbg=Gray ctermfg=Black guibg=Gray guifg=Black
+highlight Normal    guifg=NvimLightGrey2 guibg=NvimDarkGrey2 ctermfg=LightGrey ctermbg=235
+highlight Search    guifg=Black          guibg=LightYellow   ctermfg=Black     ctermbg=LightYellow
+highlight CurSearch guifg=Black          guibg=Yellow        ctermfg=Black     ctermbg=Yellow
 
 " Jump to the last cursor position when reopening a file
 " https://stackoverflow.com/questions/774560/
@@ -23,11 +25,10 @@ endif
 
 " Trim all trailing whitespace
 " https://stackoverflow.com/questions/3474709/delete-all-spaces-and-tabs-at-the-end-of-my-lines
-" autocmd BufWritePre * %s/\s\+$//e
+autocmd BufWritePre * %s/\s\+$//e
 
-" Remove search highlighting with <ESC>
+" Remove search highlighting with <F4>
 " https://gist.github.com/subfuzion/7d00a6c919eeffaf6d3dbf9a4eb11d64
-" Use <F4> instead of <ESC> because vim doesn't like mapping <ESC>
 " https://www.reddit.com/r/vim/comments/48s8ei/if_i_open_a_file_in_vim_and_press_j_to_move_down/
 nnoremap <silent> <F4> :nohlsearch<CR><C-L>
 
@@ -37,36 +38,19 @@ set mouse=a " allow navigation by clicking left mouse button
 set shiftwidth=4 " width for tabs
 set expandtab " convert tabs to whitespace
 
-set background=dark " keep proper syntax coloring in tmux
-
-" Disable CapsLock. Breaks some git commands so don't use it
-"au VimEnter * silent !setxkbmap -option caps:escape
-"au VimLeave * silent !setxkbmap -option
-
 " Turn on sidebar for neovim
-set signcolumn=yes
+"set signcolumn=yes
+"highlight SignColumn guibg=DarkCyan ctermbg=DarkCyan
 
 " Turn on sidebar for vim
 " https://superuser.com/questions/558876/how-can-i-make-the-sign-column-show-u  p-all-the-time-even-if-no-signs-have-been-a
 "sign define dummy
 "execute 'sign place 9999 line=1 name=dummy buffer=' . bufnr('')
 "highlight SignColumn ctermbg=LightBlue
-highlight SignColumn guibg=DarkCyan ctermbg=DarkCyan
 
-call plug#begin()
-Plug 'lervag/vimtex'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'airblade/vim-gitgutter'
-Plug 'morhetz/gruvbox'
-call plug#end()
-filetype indent off " vimplug automatically executes `filetype indent on` after `plut#end()`
-autocmd BufReadPre * AirlineTheme papercolor
-" autocmd BufReadPre * AirlineTheme minimalist
-highlight GitGutterAdd    guifg=Green ctermfg=Green
-highlight GitGutterChange guifg=Yellow ctermfg=Yellow
-highlight GitGutterDelete guifg=Red ctermfg=Red
-colorscheme gruvbox
+"call plug#begin()
+"call plug#end()
+"filetype indent off " `call plug` sets `filetype indent on`
 
 set colorcolumn=80
-hi ColorColumn guibg=Red
+highlight ColorColumn guifg=Red ctermfg=Red

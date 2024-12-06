@@ -1,4 +1,5 @@
 # Filename: ${HOME}/.asoundrc
+# Soft-linked from /mnt/shared/documents/dotFiles/asoundrc
 #pcm.!default {
 #  type hw
 #  card AE5
