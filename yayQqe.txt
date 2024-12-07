@@ -36,7 +36,7 @@ network-manager-applet
 networkmanager
 openmpi
 picom
-pipewire-pulse
+pulseaudio
 pulseaudio-alsa
 slack-desktop
 sudo
@@ -48,9 +48,7 @@ texlive-bibtexextra
 texlive-fontsextra
 texlive-fontsrecommended
 texlive-fontutils
-texlive-latex
 texlive-latexextra
-texlive-latexrecommended
 texlive-mathscience
 texlive-publishers
 tigervnc
@@ -62,5 +60,4 @@ wireshark-qt
 xorg-server
 xorg-xrandr
 yay
-yay-debug
 zoom

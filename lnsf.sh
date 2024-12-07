@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+XDG_CONFIG_HOME=${HOME}/.config
 DOTFILES_DIR=/mnt/shared/documents/dotFiles
 
 dir=${HOME}
