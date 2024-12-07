@@ -1,0 +1,4 @@
+0 * * * * DISPLAY=`cat /var/tmp/display` && DISPLAY=${DISPLAY} feh --no-fehbg --bg-max --randomize /mnt/shared/pictures/wp
+0 0 * * * bash /mnt/shared/documents/updateDocuments.sh
+0 0 * * * bash /mnt/shared/documents/website/uploadCV.sh
+0 0 * * * bash /mnt/shared/documents/dotFiles/updateDotFiles.sh
