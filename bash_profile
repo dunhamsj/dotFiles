@@ -13,6 +13,7 @@ if   [[ ${FQDN} = *"olcf"*         ]]; then export FACILITY="olcf"; export hn=$(
 elif [[ ${FQDN} = "gw"*            ]]; then export FACILITY="accre"
 elif [[ ${FQDN} = *"utk"*          ]]; then export FACILITY="nics"
 elif [[ ${FQDN} = "killerkadoogan" ]]; then export FACILITY="home.archlinux"
+elif [[ ${FQDN} = "ubuntu-killerkadoogan" ]]; then export FACILITY="home.ubuntu"
 else                                        export FACILITY="home.osx"
 fi
 

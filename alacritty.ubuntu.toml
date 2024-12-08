@@ -1,0 +1,11 @@
+# Filename: ${XDG_CONFIG_HOME}/alacritty/alacritty.toml
+# Soft-linked from /mnt/shared/documents/dotFiles/alacritty.toml
+#
+# Modifies attributes for alacritty terminal
+
+[font]
+size = 12
+
+[keyboard]
+bindings = [ { key = "+", mods = "Control", action = "IncreaseFontSize" },
+             { key = "-", mods = "Control", action = "DecreaseFontSize" } ]
