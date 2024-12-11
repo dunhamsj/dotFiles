@@ -1,11 +1,13 @@
 alacritty
 alsa-utils
 amd-ucode
+audio-recorder
 base
 base-devel
 bibtool
 cmatrix
 cronie
+dgen-sdl
 efibootmgr
 feh
 firefox
@@ -36,7 +38,9 @@ network-manager-applet
 networkmanager
 ntp
 openmpi
+openshot
 picom
+pipewire
 pulseaudio
 pulseaudio-alsa
 slack-desktop
