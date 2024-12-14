@@ -8,6 +8,7 @@ bibtool
 cmatrix
 cronie
 dgen-sdl
+discord
 efibootmgr
 feh
 firefox

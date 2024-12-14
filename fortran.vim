@@ -9,5 +9,6 @@ highlight fortranInclude     guifg=Magenta ctermfg=Magenta
 highlight fortranBoolean     guifg=Yellow  ctermfg=Yellow
 highlight fortranConditional guifg=Magenta ctermfg=Magenta
 highlight fortranReadWrite   guifg=Magenta ctermfg=Magenta
+highlight fortranRepeat      guifg=Magenta ctermfg=Magenta
 highlight fortranIntrinsic   guifg=Green   ctermfg=Green
 highlight fortranOperatorR   guifg=Green   ctermfg=Green
