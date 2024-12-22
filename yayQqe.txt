@@ -5,6 +5,8 @@ audio-recorder
 base
 base-devel
 bibtool
+bluez
+bluez-utils
 cmatrix
 cronie
 dgen-sdl
@@ -44,6 +46,7 @@ picom
 pipewire
 pulseaudio
 pulseaudio-alsa
+pulseaudio-bluetooth
 slack-desktop
 sudo
 teams

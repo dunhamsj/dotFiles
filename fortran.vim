@@ -12,3 +12,4 @@ highlight fortranReadWrite   guifg=Magenta ctermfg=Magenta
 highlight fortranRepeat      guifg=Magenta ctermfg=Magenta
 highlight fortranIntrinsic   guifg=Green   ctermfg=Green
 highlight fortranOperatorR   guifg=Green   ctermfg=Green
+highlight fortranAttribute   guifg=Green   ctermfg=Green

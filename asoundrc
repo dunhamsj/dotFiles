@@ -8,5 +8,13 @@
 #  type hw
 #  card AE5
 #}
-defaults.pcm.!card AE5
-defaults.pcm.!device 0
+#defaults.pcm.!card AE5
+#defaults.pcm.!device 0
+pcm.!default {
+  type hw
+  card Generic
+}
+ctl.!default {
+  type hw
+  card Generic
+}
