@@ -1,0 +1,18 @@
+#!/bin/sh
+exec tail -n +3 $0
+# This file provides an easy way to add custom menu entries.  Simply type the
+# menu entries you want to add after this comment.  Be careful not to change
+# the 'exec tail' line above.
+menuentry 'Ubuntu' --class ubuntu --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-simple-b6542088-1ade-4a94-b7a5-ff6fc83a030e' {
+	recordfail
+	load_video
+	insmod gzio
+	if [ x$grub_platform = xxen ]; then insmod xzio; insmod lzopio; fi
+	insmod part_gpt
+	insmod ext2
+	search --no-floppy --fs-uuid --set=root 05C0-16E1
+	echo	'Loading Linux 6.8.0-49-generic ...'
+	linux	/ubuntu/vmlinuz-6.8.0-49-generic root=UUID=b6542088-1ade-4a94-b7a5-ff6fc83a030e rw loglevel=7 quiet
+	echo	'Loading initial ramdisk ...'
+	initrd	/ubuntu/amd-ucode.img /ubuntu/initrd.img-6.8.0-49-generic
+}
