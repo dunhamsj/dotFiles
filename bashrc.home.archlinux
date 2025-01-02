@@ -14,7 +14,7 @@ if [ -f /usr/bin/nvim ]; then export EDITOR=nvim; fi
 # (this should define i3-sensible-terminal)
 if [ -f /usr/bin/alacritty ]; then export TERMINAL='/usr/bin/alacritty'; fi
 
-#setterm --repeat off
+setterm --repeat off
 
 ### Export environment variables
 
