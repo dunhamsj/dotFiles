@@ -63,6 +63,7 @@ tigervnc
 tmux
 unzip
 virtualbox
+webkit2gtk
 wget
 wireshark-qt
 xorg-server
