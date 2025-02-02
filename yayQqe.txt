@@ -63,6 +63,7 @@ texlive-mathscience
 texlive-publishers
 tigervnc
 tmux
+unrar
 unzip
 virtualbox
 webkit2gtk
