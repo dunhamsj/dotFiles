@@ -12,6 +12,8 @@ export FQDN=$( hostname -f )
 if   [[ ${FQDN} = *"olcf"*         ]]; then export FACILITY="olcf"; export hn=$( echo ${FQDN} | cut -d "." -f 2-2 )
 elif [[ ${FQDN} = "gw"*            ]]; then export FACILITY="accre"
 elif [[ ${FQDN} = *"utk"*          ]]; then export FACILITY="nics"
+elif [[ ${FQDN} = *"anta"*         ]]; then export FACILITY="anta"
+elif [[ ${FQDN} = *"perseus"*      ]]; then export FACILITY="perseus"
 elif [[ ${FQDN} = "killerkadoogan" ]]; then export FACILITY="home.archlinux"
 elif [[ ${FQDN} = "ubuntu-killerkadoogan" ]]; then export FACILITY="home.ubuntu"
 else                                        export FACILITY="home.osx"
