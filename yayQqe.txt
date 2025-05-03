@@ -13,6 +13,7 @@ cmatrix
 cronie
 dgen-sdl
 discord
+dosfstools
 efibootmgr
 feh
 firefox
@@ -29,6 +30,7 @@ i3blocks
 inetutils
 lapack
 libreoffice-still
+libxml2-compat
 linux
 linux-firmware
 maim
@@ -44,6 +46,7 @@ network-manager-applet
 networkmanager
 ntp
 openmpi
+pdftk
 picom
 pipewire
 pulseaudio
