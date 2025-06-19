@@ -40,8 +40,8 @@ thornado() {
   export POSEIDON_ACTIVE_DIR=${POSEIDON_DIR}
   export THORNADO_DIR=${HOME}/Work/Codes/thornado
   export WEAKLIB_DIR=${HOME}/Work/Codes/weaklib
-  export AMREX_DIR=${HOME}/Work/Codes/amrex_sjd
-  export HDF5_DIR=/usr/local/Cellar/hdf5/1.14.4.3
+  export AMREX_DIR=${HOME}/Work/Codes/amrex
+  export HDF5_DIR=/usr/local/Cellar/hdf5/1.14.5
   export LAPACK_DIR=/usr/local/Cellar/lapack/3.12.0
 
 #  make FORT_CPP="cpp-${GCC_MAJOR} -E -traditional-cpp -P"
