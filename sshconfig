@@ -1,7 +1,6 @@
 Host killerkadoogan
   HostName killerkadoogan
   User dunhamsj
-  ForwardAgent yes
   ForwardX11 yes
   XAuthLocation /opt/X11/bin/xauth # osx
 
@@ -9,19 +8,16 @@ Host killerkadoogan-wan
   HostName 138.43.81.26
   Port 21729
   User dunhamsj
-  ForwardAgent yes
   ForwardX11 yes
   XAuthLocation /opt/X11/bin/xauth # osx
 
 Host perseus
   HostName perseus.caltech.edu
   user dunhamsj
-  ForwardX11 yes
 
 Host anta
   HostName anta.caltech.edu
   user dunhamsj
-  ForwardX11 yes
 
 Host accre
   HostName login.accre.vanderbilt.edu

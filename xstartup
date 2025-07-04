@@ -1,13 +1,13 @@
 #!/bin/sh
 
-# Filename: ${HOME}/.vnc/xstartup
+# Filename: ${HOME}/.config/tigervnc/xstartup
 # Soft-linked from /mnt/shared/documents/dotFiles/xstartup
 
 unset SESSION_MANAGER
 
 unset DBUS_SESSION_BUS_ADDRESS
 
-# Filename: ${HOME}/vnc/xstartup
+# Filename: ${HOME}/.config/tigervnc/xstartup
 
 # Disable screensaver
 xset s off
