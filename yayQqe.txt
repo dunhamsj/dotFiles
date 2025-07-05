@@ -52,6 +52,7 @@ pipewire
 pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
+ranger
 slack-desktop
 sudo
 teams
