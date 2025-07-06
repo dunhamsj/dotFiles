@@ -30,6 +30,7 @@ export WEBKIT_DISABLE_DMABUF_RENDERER=1
 #export DEBUGINFOD_URLS="https://debuginfod.archlinux.org"
 #
 export XDG_CONFIG_HOME=${HOME}/.config
+export XDG_DATA_DIRS=/var/lib/flatpak/exports/share:/home/dunhamsj/.local/share/flatpak/exports/share:${XDG_DATA_DIRS}
 
 export INPUTRC=/mnt/shared/documents/dotFiles/inputrc
 
