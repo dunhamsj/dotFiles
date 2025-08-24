@@ -30,7 +30,7 @@ export WEBKIT_DISABLE_DMABUF_RENDERER=1
 #export DEBUGINFOD_URLS="https://debuginfod.archlinux.org"
 #
 export XDG_CONFIG_HOME=${HOME}/.config
-export XDG_DATA_DIRS=/var/lib/flatpak/exports/share:/home/dunhamsj/.local/share/flatpak/exports/share:${XDG_DATA_DIRS}
+#export XDG_DATA_DIRS=/var/lib/flatpak/exports/share:/home/dunhamsj/.local/share/flatpak/exports/share:${XDG_DATA_DIRS}
 
 export INPUTRC=/mnt/shared/documents/dotFiles/inputrc
 
@@ -86,7 +86,7 @@ rename() {
 
 thornado() {
 
-  export POSEIDON_MACHINE_NAME=kkadoogan
+  export POSEIDON_MACHINE_NAME=archlinux-kkadoogan
 
   export THORNADO_DIR=/mnt/shared/work/codes/thornado
   export    AMREX_DIR=/mnt/shared/work/codes/amrex
@@ -113,3 +113,7 @@ thornado() {
 if [ -f /mnt/shared/documents/dotFiles/dircolors ]; then
   source /mnt/shared/documents/dotFiles/dircolors
 fi
+
+export MANPATH=/mnt/shared/texmf/texmf-dist/doc/man:$MANPATH
+export INFOPATH=/mnt/shared/texmf/texmf-dist/doc/info:$INFOPATH
+export PATH=/mnt/shared/texmf/bin/x86_64-linux:$PATH

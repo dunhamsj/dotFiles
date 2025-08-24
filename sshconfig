@@ -5,7 +5,7 @@ Host killerkadoogan
   XAuthLocation /opt/X11/bin/xauth # osx
 
 Host killerkadoogan-wan
-  HostName 138.43.81.26
+  HostName 98.243.111.50
   Port 21729
   User dunhamsj
   ForwardX11 yes

@@ -12,7 +12,7 @@ xset r rate 500 40
 xset -r 26 # Stop `e` key from auto-repeating
 
 # Set background to random image in specified directory
-#feh --no-fehbg --bg-max --randomize /mnt/shared/pictures/wp
+feh --no-fehbg --bg-max --randomize /mnt/shared/pictures/wp
 #. /home/dunhamsj/.fehbg
 
 # Start picom using custom conf file

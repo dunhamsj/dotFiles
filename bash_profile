@@ -14,8 +14,8 @@ elif [[ ${FQDN} = "gw"*            ]]; then export FACILITY="accre"
 elif [[ ${FQDN} = *"utk"*          ]]; then export FACILITY="nics"
 elif [[ ${FQDN} = *"anta"*         ]]; then export FACILITY="anta"
 elif [[ ${FQDN} = *"perseus"*      ]]; then export FACILITY="perseus"
-elif [[ ${FQDN} = "killerkadoogan" ]]; then export FACILITY="home.archlinux"
-elif [[ ${FQDN} = "ubuntu-killerkadoogan" ]]; then export FACILITY="home.ubuntu"
+elif [[ ${FQDN} = "killerkadoogan" ]]; then export FACILITY="home.ubuntu"
+elif [[ ${FQDN} = "archlinux-killerkadoogan" ]]; then export FACILITY="home.archlinux"
 else                                        export FACILITY="home.osx"
 fi
 
