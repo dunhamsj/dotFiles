@@ -1,18 +1,62 @@
-Host *bitbucket*
-  ForwardX11 no
+Host killerkadoogan
+  HostName 10.0.0.41
+  User dunhamsj
+  ForwardAgent yes
+  XAuthLocation /opt/X11/bin/xauth # osx
 
-Host *github*
-  ForwardX11 no
+Host killerkadoogan-wan
+  HostName 98.243.111.50
+  Port 21729
+  User dunhamsj
+  ForwardAgent yes
+  XAuthLocation /opt/X11/bin/xauth # osx
 
-Host *accre*
-  ForwardX11 no
+Host perseus
+  HostName perseus.caltech.edu
+  user dunhamsj
+
+Host anta
+  HostName anta.caltech.edu
+  user dunhamsj
+
+Host accre
+  HostName login.accre.vanderbilt.edu
+  User dunhamsj
+
+Host summit
+  HostName summit.olcf.ornl.gov
+  User dunhamsj
+
+Host frontier
+  HostName frontier.olcf.ornl.gov
+  User dunhamsj
+
+Host andes
+  HostName andes.olcf.ornl.gov
+  User dunhamsj
+
+Host isaac-ng
+  HostName login.isaac.utk.edu
+  User sdunham6
+
+Host isaac-legacy
+  HostName acf-login.acf.utk.edu
+  User sdunham6
+
+Host vpac
+  HostName vpac01.phy.vanderbilt.edu
+  User dunhamsj
+
+Host ascent
+  HostName login1.ascent.olcf.ornl.gov
+  User dunhamsj
 
 Host *
-  AddKeysToAgent yes
-  UseKeychain yes
-  IdentityFile ~/.ssh/id_rsa
-  ForwardX11 yes
-  XAuthLocation /opt/X11/bin/xauth
+  IdentityFile ~/.ssh/id_ed25519
   ServerAliveInterval 60
   TCPKeepAlive yes
-#  PreferredAuthentications keyboard-interactive,password
+  ForwardX11 no
+#  XAuthLocation /usr/bin/xauth # linux
+#  PreferredAuthentications keyboard-interactive,publickey
+#  UseKeychain yes
+#  AddKeysToAgent yes

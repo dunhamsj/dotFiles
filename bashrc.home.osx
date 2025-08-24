@@ -9,7 +9,7 @@ export GREP_OPTIONS='--color=always'
 
 export PATH=/usr/local/bin:${PATH}
 
-export PTOOLSDIR=${HOME}/Work/paperTools
+export PTOOLSDIR=${HOME}/paperTools
 
 alias ls='ls -GF'
 
