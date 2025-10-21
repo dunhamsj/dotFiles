@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+
+# Filename: ${HOME}/.bash_prompt
+# Soft-linked from /mnt/shared/documents/dotFiles/bash_prompt
+#
+# Adapted from https://stackoverflow.com/questions/3058325/
+# what-is-the-difference-between-ps1-and-prompt-command
+#
+# Modifies PS1
+
+DEFAULT="\[\033[0m\]"
+GREEN="\[\033[0;32m\]"
+RED="\[\033[0;31m\]"
+YELLOW="\[\033[1;33m\]"
+
+MYPS1=""
+
+# Display error code number
+ERRMSG=$1
+if [[ ${ERRMSG} != 0 ]]; then
+  MYPS1+="${RED}${ERRMSG}${DEFAULT} "
+fi
+
+# Display python virtual environment
+VENV=`printenv | grep VIRTUAL_ENV_PROMPT | cut -d "=" -f 2`
+if [[ ${#VENV} != 0 ]]; then
+  MYPS1+="${YELLOW}(${VENV})${DEFAULT} "
+fi
+
+# Display git branch
+BRANCH=`git branch 2> /dev/null | grep \* | cut -d " " -f 2`
+if [[ ${#BRANCH} != 0 ]]; then
+  MYPS1+="${YELLOW}(${BRANCH})${DEFAULT} "
+fi
+
+basedir=`sed -e "s;\(/.\)[^/]*;\1;g" <<< ${PWD%/*}`
+MYPS1+="${GREEN}\h${DEFAULT}:$basedir/$(basename ${PWD}) $ "
+
+echo "${MYPS1}"

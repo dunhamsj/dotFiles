@@ -48,9 +48,12 @@ set expandtab " convert tabs to whitespace
 "execute 'sign place 9999 line=1 name=dummy buffer=' . bufnr('')
 "highlight SignColumn ctermbg=LightBlue
 
-"call plug#begin()
-"call plug#end()
-"filetype indent off " `call plug` sets `filetype indent on`
+call plug#begin()
+Plug 'tomasiser/vim-code-dark'
+call plug#end()
+filetype indent off " `call plug` sets `filetype indent on`
+
+colorscheme codedark
 
 set colorcolumn=80
 highlight ColorColumn guifg=Red ctermfg=Red

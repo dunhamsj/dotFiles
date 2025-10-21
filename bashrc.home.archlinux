@@ -14,7 +14,7 @@ if [ -f /usr/bin/nvim ]; then export EDITOR=nvim; fi
 # (this should define i3-sensible-terminal)
 if [ -f /usr/bin/alacritty ]; then export TERMINAL='/usr/bin/alacritty'; fi
 
-setterm --repeat off
+#setterm --repeat on
 
 ### Export environment variables
 
@@ -59,7 +59,7 @@ alias  voldn='pactl set-sink-volume @DEFAULT_SINK@ -1%'
 alias   mute='pactl set-sink-mute   @DEFAULT_SINK@ 1'
 alias unmute='pactl set-sink-mute   @DEFAULT_SINK@ 0'
 
-alias sa='source ${HOME}/myvenv/bin/activate'
+alias sa='source /mnt/shared/myvenv/bin/activate'
 alias sd='source deactivate'
 alias startx='startx > /dev/null 2> /dev/null'
 

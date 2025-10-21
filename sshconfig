@@ -11,6 +11,10 @@ Host killerkadoogan-wan
   ForwardX11 yes
   XAuthLocation /opt/X11/bin/xauth # osx
 
+Host maddoghoek
+  HostName 10.0.0.3
+  User dunhamsj
+
 Host perseus
   HostName perseus.caltech.edu
   user dunhamsj
@@ -20,7 +24,7 @@ Host anta
   user dunhamsj
 
 Host accre
-  HostName login.accre.vanderbilt.edu
+  HostName login.accre.vu
   User dunhamsj
 
 Host summit
