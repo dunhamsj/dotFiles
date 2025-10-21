@@ -4,6 +4,7 @@
 if [ -f ${HOME}/.bash_aliases ]; then . ${HOME}/.bash_aliases; fi
 
 export EDITOR=nvim
+export EDITORRR=nvim
 
 export GREP_OPTIONS='--color=always'
 
