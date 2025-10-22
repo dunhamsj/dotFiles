@@ -2,12 +2,14 @@
 alacritty
 alsa-utils
 amd-ucode
+apache
 base
 base-devel
 bibtool
 cronie
 discord
 efibootmgr
+exiv2
 feh
 firefox
 gcc-fortran
@@ -39,6 +41,7 @@ nvidia
 openmpi
 openssh
 pdftk
+perl-image-exiftool
 picom
 pipewire
 pulseaudio
