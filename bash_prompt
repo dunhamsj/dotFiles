@@ -21,6 +21,12 @@ if [[ ${ERRMSG} != 0 ]]; then
   MYPS1+="${RED}${ERRMSG}${DEFAULT} "
 fi
 
+# Display python venv
+VENV=`printenv | grep VIRTUAL_ENV_PROMPT | cut -d "=" -f 2`
+if [[ ${#VENV} != 0 ]]; then
+  MYPS1+="${YELLOW}(${VENV})${DEFAULT} "
+fi
+
 # Display git branch
 BRANCH=`git branch 2> /dev/null | grep \* | cut -d " " -f 2`
 if [[ ${#BRANCH} != 0 ]]; then

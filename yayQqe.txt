@@ -26,6 +26,7 @@ libreoffice-still
 libxml2-legacy
 linux
 linux-firmware
+lsof
 maim
 man-db
 man-pages
@@ -46,7 +47,6 @@ picom
 pipewire
 pulseaudio
 pulseaudio-alsa
-qterminal
 ranger
 slack-desktop
 sudo
