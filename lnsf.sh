@@ -7,13 +7,14 @@ dir=${HOME}
 ln -sf ${DOTFILES_DIR}/asoundrc ${dir}/.asoundrc
 ln -sf ${DOTFILES_DIR}/bash_aliases ${dir}/.bash_aliases
 ln -sf ${DOTFILES_DIR}/bash_profile ${dir}/.bash_profile
-ln -sf ${DOTFILES_DIR}/bash_prompt ${dir}/.bash_prompt
 ln -sf ${DOTFILES_DIR}/bashrc ${dir}/.bashrc
 ln -sf ${DOTFILES_DIR}/bashrc.home.archlinux ${dir}/.bashrc.home.archlinux
 ln -sf ${DOTFILES_DIR}/gitconfig ${dir}/.gitconfig
 ln -sf ${DOTFILES_DIR}/inputrc ${dir}/.inputrc
 ln -sf ${DOTFILES_DIR}/tmux.conf ${dir}/.tmux.conf
 ln -sf ${DOTFILES_DIR}/xinitrc ${dir}/.xinitrc
+cp     ${DOTFILES_DIR}/bash_prompt ${dir}/.bash_prompt
+cp     ${DOTFILES_DIR}/reboot.sh ${dir}/reboot.sh
 
 dir=${XDG_CONFIG_HOME}/mpd
 mkdir -p ${dir}
