@@ -36,6 +36,7 @@ mpv
 mupdf-gl
 neofetch
 neovim
+netstat-nat
 networkmanager
 nmap
 nvidia
