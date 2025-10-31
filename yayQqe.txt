@@ -13,6 +13,7 @@ exiv2
 feh
 firefox
 gcc-fortran
+gdb
 git
 git-lfs
 grub
