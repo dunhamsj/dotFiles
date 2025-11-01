@@ -28,6 +28,7 @@ libxml2-legacy
 linux
 linux-firmware
 lsof
+lxd
 maim
 man-db
 man-pages
