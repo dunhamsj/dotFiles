@@ -32,6 +32,7 @@ lxd
 maim
 man-db
 man-pages
+mattermost-desktop
 mpc
 mpd
 mpv
