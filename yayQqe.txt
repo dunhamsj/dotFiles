@@ -74,6 +74,5 @@ wget
 xorg-server
 xorg-xrandr
 yay
-yay-debug
 zoom
 zork1
