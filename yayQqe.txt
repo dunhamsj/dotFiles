@@ -42,7 +42,7 @@ neovim
 netstat-nat
 networkmanager
 nmap
-nvidia
+nvidia-open
 openmpi
 openssh
 pdftk
