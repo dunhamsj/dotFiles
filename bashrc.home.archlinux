@@ -117,3 +117,5 @@ fi
 export MANPATH=/mnt/shared/texmf/texmf-dist/doc/man:$MANPATH
 export INFOPATH=/mnt/shared/texmf/texmf-dist/doc/info:$INFOPATH
 export PATH=/mnt/shared/texmf/bin/x86_64-linux:$PATH
+
+alias feh='feh -.'
