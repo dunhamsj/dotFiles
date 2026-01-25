@@ -61,7 +61,7 @@ alias unmute='pactl set-sink-mute   @DEFAULT_SINK@ 0'
 
 alias sa='source /mnt/shared/myvenv/bin/activate'
 alias sd='source deactivate'
-#alias startx='startx > /dev/null 2> /dev/null'
+alias startx='startx > /dev/null 2> /dev/null'
 
 rename() {
 
