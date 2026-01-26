@@ -6,6 +6,7 @@ apache
 base
 base-devel
 bibtool
+cmatrix
 cronie
 discord
 efibootmgr
