@@ -118,4 +118,7 @@ export MANPATH=/mnt/shared/texmf/texmf-dist/doc/man:$MANPATH
 export INFOPATH=/mnt/shared/texmf/texmf-dist/doc/info:$INFOPATH
 export PATH=/mnt/shared/texmf/bin/x86_64-linux:$PATH
 
+export GREX_HOME=/home/dunhamsj/grex
+export AMREX_HOME=/mnt/shared/work/codes/amrex
+
 alias feh='feh -.'
