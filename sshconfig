@@ -12,7 +12,7 @@ Host killerkadoogan-wan
   XAuthLocation /opt/X11/bin/xauth # osx
 
 Host maddoghoek
-  HostName 10.0.0.3
+  HostName 10.0.0.183
   User dunhamsj
 
 Host perseus
