@@ -1,3 +1,4 @@
+echo "Sourcing ~/.bashrc.archlinux"
 # Filename: ${HOME}/.bashrc.home.archlinux
 # Soft-linked from /mnt/shared/documents/dotFiles/bashrc.home.archlinux
 
