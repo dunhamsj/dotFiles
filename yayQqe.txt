@@ -54,6 +54,7 @@ pdftk
 perl-image-exiftool
 picom
 pipewire
+proton-vpn-gtk-app
 pulseaudio
 pulseaudio-alsa
 qbittorrent
@@ -79,6 +80,7 @@ unzip
 vboxtool
 virtualbox
 wget
+wireguard-tools
 xorg-server
 xorg-xrandr
 yay
