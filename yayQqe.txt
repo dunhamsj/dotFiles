@@ -72,6 +72,7 @@ texlive-fontutils
 texlive-latexextra
 texlive-publishers
 tigervnc
+tldr
 tmux
 torbrowser-launcher
 traceroute
