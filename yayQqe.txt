@@ -79,7 +79,6 @@ traceroute
 unrar
 unzip
 vboxtool
-virtualbox
 wget
 wireguard-tools
 xorg-server
