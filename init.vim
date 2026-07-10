@@ -9,7 +9,7 @@ filetype indent off
 syntax on
 filetype plugin on
 
-"set termguicolors " turn off if using mac terminal emulator
+"set notermguicolors " turn off if using mac terminal emulator
 
 highlight Normal    guifg=NvimLightGrey2 guibg=NvimDarkGrey2 ctermfg=LightGrey ctermbg=235
 highlight Search    guifg=Black          guibg=LightYellow   ctermfg=Black     ctermbg=LightYellow
