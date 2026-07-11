@@ -1,3 +1,15 @@
+Host pihole
+  HostName 10.0.0.162
+  User pihole
+  ForwardX11 yes
+#  XAuthLocation /opt/X11/bin/xauth # osx
+
+Host pihole-wifi
+  HostName 10.0.0.55
+  User pihole
+  ForwardX11 yes
+#  XAuthLocation /opt/X11/bin/xauth # osx
+
 Host killerkadoogan
   HostName killerkadoogan
   User dunhamsj
