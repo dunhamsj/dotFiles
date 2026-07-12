@@ -6,8 +6,6 @@ base-devel
 bibtool
 cmatrix
 cronie
-docker
-docker-compose
 efibootmgr
 feh
 firefox
@@ -54,5 +52,4 @@ tmux
 unzip
 wget
 xorg-server
-yay
 yay-debug
