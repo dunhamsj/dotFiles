@@ -31,18 +31,18 @@ thornado() {
 
   export PATH=/usr/local/Cellar/gcc/14.2.0/bin:${PATH}
 
-  alias gcc=gcc-14
-  alias cpp=cpp-14
+  alias gcc=gcc-15
+  alias cpp=cpp-15
 
-  export GCC_MAJOR=14
+  export GCC_MAJOR=15
 
-  export POSEIDON_DIR=${HOME}/Work/Codes/poseidon
+  export POSEIDON_DIR=${HOME}/work/codes/poseidon
   export POSEIDON_ACTIVE_DIR=${POSEIDON_DIR}
-  export THORNADO_DIR=${HOME}/Work/Codes/thornado
-  export WEAKLIB_DIR=${HOME}/Work/Codes/weaklib
-  export AMREX_DIR=${HOME}/Work/Codes/amrex
-  export HDF5_DIR=/usr/local/Cellar/hdf5/1.14.5
-  export LAPACK_DIR=/usr/local/Cellar/lapack/3.12.0
+  export THORNADO_DIR=${HOME}/work/codes/thornado
+  export WEAKLIB_DIR=${HOME}/work/codes/weaklib
+  export AMREX_DIR=${HOME}/work/codes/amrex
+  export HDF5_DIR=/usr/local/Cellar/hdf5/1.14.6
+  export LAPACK_DIR=/usr/local/Cellar/lapack/3.12.1
 
 #  make FORT_CPP="cpp-${GCC_MAJOR} -E -traditional-cpp -P"
 
@@ -55,6 +55,6 @@ thornado() {
   alias yc='cd ${THORNADO_DIR}/SandBox/YahilCollapse_XCFC/Executables/'
   alias wf='cd ${THORNADO_DIR}/Workflow/AMReX'
   alias amrex='cd ${THORNADO_DIR}/SandBox/AMReX/dgExperiments_Euler_Relativistic_IDEAL'
-  alias qv='cd ${HOME}/Work/Analysis'
+  alias qv='cd ${HOME}/work/Analysis'
 
 }

@@ -1,11 +1,12 @@
 Host killerkadoogan
   HostName 10.0.0.41
+  Port 21729
   User dunhamsj
   ForwardAgent yes
   XAuthLocation /opt/X11/bin/xauth # osx
 
 Host killerkadoogan-wan
-  HostName 98.243.111.50
+  HostName 98.224.205.242
   Port 21729
   User dunhamsj
   ForwardAgent yes
@@ -20,7 +21,7 @@ Host anta
   user dunhamsj
 
 Host accre
-  HostName login.accre.vanderbilt.edu
+  HostName login.accre.vu
   User dunhamsj
 
 Host summit
