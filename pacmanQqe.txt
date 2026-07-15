@@ -6,6 +6,7 @@ base-devel
 bibtool
 cmatrix
 cronie
+docker
 efibootmgr
 feh
 firefox
