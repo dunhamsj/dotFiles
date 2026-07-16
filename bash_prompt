@@ -33,7 +33,14 @@ if [[ ${#BRANCH} != 0 ]]; then
   MYPS1+="${YELLOW}(${BRANCH})${DEFAULT} "
 fi
 
-basedir=`sed -e "s;\(/.\)[^/]*;\1;g" <<< ${PWD%/*}`
-MYPS1+="${GREEN}\h${DEFAULT}:$basedir/$(basename ${PWD}) $ "
+# Check for spaces in $PWD
+if [[ ${PWD} = *" "* ]]
+then
+  MYPS1="${PWD} $ "
+  MYPS1="${GREEN}\h${DEFAULT}:${PWD} $ "
+else
+  basedir=`sed -e "s;\(/.\)[^/]*;\1;g" <<< ${PWD%/*}`
+  MYPS1+="${GREEN}\h${DEFAULT}:$basedir/$(basename ${PWD}) $ "
+fi
 
 echo "${MYPS1}"
