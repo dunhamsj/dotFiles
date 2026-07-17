@@ -42,12 +42,14 @@ networkmanager
 openmpi
 openssh
 pdftk
+perl-image-exiftool
 picom
 ranger
 sudo
 terminus-font
 texinfo
 texlive-basic
+texlive-fontsrecommended
 texlive-latex
 texlive-latexextra
 texlive-latexrecommended
