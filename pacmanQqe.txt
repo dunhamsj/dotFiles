@@ -39,6 +39,7 @@ mpv
 mupdf-gl
 neovim
 networkmanager
+nginx
 openmpi
 openssh
 pdftk
