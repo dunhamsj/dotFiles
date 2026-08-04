@@ -4,6 +4,7 @@ amd-ucode
 base
 base-devel
 bibtool
+certbot-nginx
 cmatrix
 cronie
 docker
@@ -39,12 +40,14 @@ mpv
 mupdf-gl
 neovim
 networkmanager
-nginx
+nginx-mainline
+onionshare-cli
 openmpi
 openssh
 pdftk
 perl-image-exiftool
 picom
+proton-vpn-cli
 ranger
 sudo
 terminus-font
@@ -57,6 +60,7 @@ texlive-latexrecommended
 tigervnc
 tldr
 tmux
+tor-browser-bin
 unzip
 wget
 xorg-server
