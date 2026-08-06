@@ -33,6 +33,7 @@ maim
 makemkv-cli
 man-db
 man-pages
+mkp224o
 mkvtoolnix-cli
 mpc
 mpd
@@ -41,7 +42,6 @@ mupdf-gl
 neovim
 networkmanager
 nginx-mainline
-onionshare-cli
 openmpi
 openssh
 pdftk
@@ -60,6 +60,7 @@ texlive-latexrecommended
 tigervnc
 tldr
 tmux
+tor
 tor-browser-bin
 unzip
 wget
