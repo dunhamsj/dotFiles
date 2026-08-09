@@ -31,9 +31,9 @@ linux
 linux-firmware
 lsof
 maim
-makemkv-cli
 man-db
 man-pages
+mediainfo
 mkp224o
 mkvtoolnix-cli
 mpc
@@ -49,6 +49,7 @@ pdftk
 perl-image-exiftool
 picom
 proton-vpn-cli
+qt6-multimedia-ffmpeg
 ranger
 sudo
 terminus-font
@@ -64,6 +65,7 @@ tmux
 tor
 tor-browser-bin
 unzip
+vlc
 wget
 xorg-server
 yay
