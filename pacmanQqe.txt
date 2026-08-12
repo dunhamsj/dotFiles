@@ -30,6 +30,7 @@ libreoffice-still
 linux
 linux-firmware
 lsof
+lxc
 maim
 man-db
 man-pages
