@@ -41,6 +41,7 @@ mpc
 mpd
 mpv
 mupdf-gl
+neofetch
 neovim
 networkmanager
 nginx-mainline
@@ -50,6 +51,7 @@ pdftk
 perl-image-exiftool
 picom
 proton-vpn-cli
+pulseaudio
 qt6-multimedia-ffmpeg
 ranger
 sudo
