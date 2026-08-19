@@ -3,6 +3,8 @@
 #
 # Adapted from https://github.com/jaharris87/dotfiles/bash_profile/bashrc
 
+echo "Sourcing ~/.bash_profile"
+
 if [ -f ${HOME}/.bash_aliases ]; then . ${HOME}/.bash_aliases; fi
 
 # Get full hostname, including domain (i.e., Fully Qualified Domain Name)

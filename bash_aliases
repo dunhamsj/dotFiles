@@ -3,6 +3,8 @@
 #
 # Define some system-independent bash aliases
 
+echo "Sourcing ~/.bash_aliases"
+
 HISTSIZE=100000
 
 ## General aliases

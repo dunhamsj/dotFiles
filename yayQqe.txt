@@ -35,6 +35,7 @@ maim
 man-db
 man-pages
 mediainfo
+meshtastic-desktop-bin
 mkp224o
 mkvtoolnix-cli
 mpc

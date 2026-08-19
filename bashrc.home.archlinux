@@ -1,6 +1,7 @@
-echo "Sourcing ~/.bashrc.archlinux"
 # Filename: ${HOME}/.bashrc.home.archlinux
 # Soft-linked from /mnt/shared/documents/dotFiles/bashrc.home.archlinux
+
+echo "Sourcing ~/.bashrc.archlinux"
 
 # If /etc/profile.d/modules.sh exists (`module load`, etc.), run it
 if [ -f /etc/profile.d/modules.sh ]; then . /etc/profile.d/modules.sh; fi
