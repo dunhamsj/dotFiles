@@ -68,6 +68,7 @@ tldr
 tmux
 tor
 tor-browser-bin
+traceroute
 unzip
 vlc
 wget
