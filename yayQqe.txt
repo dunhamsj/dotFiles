@@ -4,10 +4,11 @@ amd-ucode
 base
 base-devel
 bibtool
+btrfs-progs
 certbot-nginx
 cmatrix
 cronie
-docker
+dnsmasq
 docker-compose
 efibootmgr
 feh
@@ -31,6 +32,7 @@ linux
 linux-firmware
 lsof
 lxc
+lxd
 maim
 man-db
 man-pages
