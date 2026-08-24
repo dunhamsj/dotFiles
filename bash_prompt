@@ -34,7 +34,7 @@ if [[ ${#BRANCH} != 0 ]]; then
 fi
 
 # Emphasize if user is root
-if [[ ${LOGNAME} = "root" ]]
+if [[ ${USER} = "root" ]]
 then
   USER_COLOR=${RED}
 else
