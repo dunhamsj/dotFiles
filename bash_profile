@@ -3,7 +3,7 @@
 #
 # Adapted from https://github.com/jaharris87/dotfiles/bash_profile/bashrc
 
-echo "Sourcing ~/.bash_profile"
+echo "Sourcing ${HOME}/.bash_profile"
 
 if [ -f ${HOME}/.bash_aliases ]; then . ${HOME}/.bash_aliases; fi
 

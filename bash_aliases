@@ -3,7 +3,7 @@
 #
 # Define some system-independent bash aliases
 
-echo "Sourcing ~/.bash_aliases"
+echo "Sourcing ${HOME}/.bash_aliases"
 
 HISTSIZE=100000
 
