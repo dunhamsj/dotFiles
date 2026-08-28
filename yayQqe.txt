@@ -2,6 +2,7 @@ alacritty
 amd-ucode
 base
 base-devel
+bind
 btrfs-progs
 cronie
 dnsmasq
