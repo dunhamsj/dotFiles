@@ -19,6 +19,7 @@ linux
 linux-firmware
 lsof
 lxc
+lynx
 maim
 man-db
 man-pages
@@ -30,6 +31,7 @@ networkmanager
 openssh
 picom
 pulseaudio
+ranger
 sudo
 tcpdump
 terminus-font
