@@ -44,3 +44,4 @@ vlc
 xorg-server
 yay
 yay-debug
+yt-dlp
