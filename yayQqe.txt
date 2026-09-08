@@ -30,9 +30,12 @@ neovim
 networkmanager
 openssh
 picom
+proton-vpn-cli
 pulseaudio
+qbittorrent
 ranger
 sudo
+systemd-resolvconf
 tcpdump
 terminus-font
 termshark
@@ -41,6 +44,7 @@ tigervnc
 tmux
 traceroute
 vlc
+wireguard-tools
 xorg-server
 yay
 yay-debug
