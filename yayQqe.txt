@@ -15,6 +15,7 @@ htop
 i3-wm
 i3blocks
 inetutils
+libreoffice-still
 linux
 linux-firmware
 lsof
