@@ -44,6 +44,7 @@ texinfo
 tigervnc
 tmux
 traceroute
+ttf-impallari-dancing-script
 vlc
 wireguard-tools
 xorg-server
