@@ -27,6 +27,7 @@ man-pages
 mpc
 mpd
 mpv
+mupdf-gl
 neovim
 networkmanager
 openssh
@@ -41,10 +42,16 @@ tcpdump
 terminus-font
 termshark
 texinfo
+texlive-fontsrecommended
+texlive-latex
+texlive-latexextra
+texlive-mathscience
+texlive-plaingeneric
 tigervnc
 tmux
 traceroute
 ttf-impallari-dancing-script
+unzip
 vlc
 wireguard-tools
 xorg-server
