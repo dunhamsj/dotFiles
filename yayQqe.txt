@@ -56,5 +56,4 @@ vlc
 wireguard-tools
 xorg-server
 yay
-yay-debug
 yt-dlp
